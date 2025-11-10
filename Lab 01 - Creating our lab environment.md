@@ -38,4 +38,6 @@ Kali Linux image (latest version): [https://www.kali.org/get-kali/](https://www.
 
 > :writing_hand: The default login is kali for the user and kali for the password!
 
-6. Update your kali, Open a terminal and run: ```sudo apt update && sudo apt upgrade```
+6. Update your kali to the latest version
+   a. Open a terminal and run: ```sudo apt update && sudo apt full-upgrade -y```
+   b. run ```sudo apt --fix-broken install```
