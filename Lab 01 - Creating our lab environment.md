@@ -49,4 +49,5 @@ Kali Linux image (latest version): [https://www.kali.org/get-kali/](https://www.
    d. run: ```sudo apt clean```
    e. run: ```sudo reboot```
 
-7. Shutdown and Power off VM and **Take a Snapshot**
+7. Shutdown / Power Off the Kali VM and **Take a Snapshot**
+> ⚠️ Taking a snapshot of your Kali Linux virtual machine in VirtualBox is highly recommended because it saves the current state of the VM, allowing you to quickly roll back if something goes wrong after updates, tool installations, or configuration changes. This is especially useful for penetration testing and security research, where you often experiment with risky tools or scripts. Snapshots act like version control for your VM, saving time compared to reinstalling the OS or troubleshooting issues. It’s best to take snapshots right after installation, after major updates, and before making significant changes. To create one, open VirtualBox Manager, select your Kali VM, go to the Snapshots tab, click Take Snapshot, and give it a descriptive name like “Fresh Install” or “Post Update.” Restoring a snapshot takes seconds, making it an essential practice for safe experimentation and efficient recovery.
