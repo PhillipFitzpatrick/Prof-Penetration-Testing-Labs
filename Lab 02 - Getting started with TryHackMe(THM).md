@@ -1,6 +1,6 @@
 # Lab 2: Getting started with TryHackMe.com (THM)
 
-Estimated Time: 50 Mins
+Estimated Time: 60 Mins
 
 This week we'll be introducing the “TryHackMe.com” learning platform. We’ll be using this platform most weeks to supplement our lab activities. The platform offers both a free and paid membership, however the free membership offers a huge number of free labs and will be enough for this module. 
 
