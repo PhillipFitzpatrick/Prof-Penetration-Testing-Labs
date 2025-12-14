@@ -3,7 +3,7 @@
 The main assessment for this module is a large practical test during exam week. The assessment will be a simulated penetration test on a small company network, for both their wired and wireless networks. To complete the penetration test you'll need your own laptop, hardware, backups etc. and any tools or resources you might need for the day. Having a fully working attack machine will be essential. 
 
 All of the lab activities and in-class demos will be completed using the setup outlined below, however you are free to use any setup and tools you prefer. 
-> :warning: I won't be troubleshooting any issues on different setups, outside of the suggested lab environment. 
+> :warning: While you are free to use your own setups, troubleshooting any issues on different setups outside of the suggested lab environment, won't be possible. 
 
 ___
 
@@ -32,12 +32,18 @@ Kali Linux image (latest version): [https://www.kali.org/get-kali/](https://www.
    -- On Mac the default archive tool should be able to extract the image.  
 
 4. Start VirtualBox and select ‘Add’. We then navigate to the location our VM is downloaded and find the .vbox file.
+
 5. You can change any of the settings to suit your own system, and then start the VM.
    > 💡 Base Memory: Allocate a minimum of 2048 MB RAM (more for better performance).  
    > 💡 Processors: 1 CPU (more for better performance)
 
 > :writing_hand: The default login is kali for the user and kali for the password!
 
-6. Update your kali to the latest version
+6. Update your Kali to the latest version
    a. Open a terminal and run: ```sudo apt update && sudo apt full-upgrade -y```
-   b. run ```sudo apt --fix-broken install```
+   b. run: ```sudo apt --fix-broken install```
+   c. run: ```sudo apt autoremove --purge -y```
+   d. run: ```sudo apt clean```
+   e. run: ```sudo reboot```
+
+7. Shutdown and Power off VM and **Take a Snapshot**
