@@ -1,8 +1,11 @@
 # Lab 1: Configuring our lab environment
 
+Estimated Time: 120 Mins
+
 The main assessment for this module is a large practical test during exam week. The assessment will be a simulated penetration test on a small company network, for both their wired and wireless networks. To complete the penetration test you'll need your own laptop, hardware, backups etc. and any tools or resources you might need for the day. Having a fully working attack machine will be essential. 
 
-All of the lab activities and in-class demos will be completed using the setup outlined below, however you are free to use any setup and tools you prefer. 
+All of the lab activities and in-class demos will be completed using the setup outlined below, however you are free to use any setup and tools you prefer.
+
 > :warning: While you are free to use your own setups, troubleshooting any issues on different setups outside of the suggested lab environment, won't be possible. 
 
 ___
