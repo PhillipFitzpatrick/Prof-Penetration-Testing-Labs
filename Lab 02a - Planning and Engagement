@@ -1,1 +1,24 @@
+Before you begin this lab:
 
+You should already have your attack machine (Kali VM) setup and configured.
+
+You should have created an account on the TryHackMe Platform.
+
+You should have created an account on the HackTheBox Platform.
+If you haven't completed any of these steps, please return and complete '00 - Getting Started' Lab.
+Complete the TryHackMe Labs.
+I'm going to suggest several free labs you should complete on the tryHackMe platform. Again, you might want to make notes of anything useful that you find. I'll list a few additional labs you might want to try completing this week also.
+Essential Labs
+1. Beginner Path Intro - Get a short introduction to a few of the security topics you'll be learning about.
+2. Starting Out in cyber Sec - Learn about the different career paths in Cyber Security and how TryHackMe can help!
+3. Jr Security analyst - Play through a day in the life of a Junior Security Analyst, their responsibilities and qualifications needed to land a role as an analyst.
+4. Pentesting fundamentals - Learn the important ethics and methodologies behind every pentest.
+5. Hacker Methodology - Introduction to the Hacker Methodology
+6. Red Team Engagements - Learn the steps and procedures of a red team engagement, including planning, frameworks, and documentation.
+7. Defensive Security - Introducing defensive security and related topics, such as threat intelligence, SOC, DFIR, and SIEM.
+8. Tutorial - Learn how to use a TryHackMe room to start your upskilling in cyber security.
+
+Optional Labs
+1. Security Awareness Intro - An introduction to security awareness; why its important, the impact of being attacked, different threat actors and basic account security.
+2. Principles of Security - Learn the principles of information security that secures data and protects systems from abuse
+3. Getting Started - Get started with TryHackMe by hacking a fake social media website!
