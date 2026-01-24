@@ -1,10 +1,10 @@
 # Lab 2a: Planning and Engagement
 
 >💡 Before you begin this lab:
->• You should already have your attack machine (Kali VM) setup and configured.
->• You should have created an account on the TryHackMe Platform.
->• You should have created an account on the HackTheBox Platform.
->If you haven't completed any of these steps, please return and complete '00 - Getting Started' Lab.
+• You should already have your attack machine (Kali VM) setup and configured.
+• You should have created an account on the TryHackMe Platform.
+• You should have created an account on the HackTheBox Platform.
+If you haven't completed any of these steps, please return and complete '00 - Getting Started' Lab.
 ___
 
 
