@@ -1,10 +1,10 @@
-# Lab 2: Getting started with TryHackMe.com (THM)
+# Lab 2a: Planning and Engagement
 
-Estimated Time: 120 Mins
-
-This week we'll be introducing the “TryHackMe.com” learning platform. We’ll be using this platform most weeks to supplement our lab activities. The platform offers both a free and paid membership, however the free membership offers a huge number of free labs and will be enough for this module. 
-
-> 💡 The paid subscription is an excellent resource, but probably better suited for when you're studying for your certification exams, and you've exhausted the free labs
+>💡 Before you begin this lab:
+>• You should already have your attack machine (Kali VM) setup and configured.
+>• You should have created an account on the TryHackMe Platform.
+>• You should have created an account on the HackTheBox Platform.
+>If you haven't completed any of these steps, please return and complete '00 - Getting Started' Lab.
 ___
 
 
