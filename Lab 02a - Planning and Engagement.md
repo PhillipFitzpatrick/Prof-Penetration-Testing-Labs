@@ -37,7 +37,7 @@ ___
 8. [Tutorial](https://tryhackme.com/room/tutorial) - Learn how to use a TryHackMe room to start your upskilling in cyber security.. 
 
 
-### Essential Labs: 
+### Optional Labs: 
 
 1. [Security Awareness Intro](https://tryhackme.com/room/securityawarenessintro) - An introduction to security awareness; why its important, the impact of being attacked, different threat actors and basic account security.
 
