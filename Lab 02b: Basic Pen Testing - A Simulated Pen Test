@@ -87,3 +87,12 @@ Task: run ```sudo gzip -d /usr/share/wordlists/rockyou.txt.gz```
 --> Result: TVM access is granted for Jan by exploiting a vulnerability in the SSH service.
 
 Task: ssh jan@192.168.1.x
+
+c) Now we can enumerate the file system on the TCM
+Task: run ```ls - la```
+Task: run ```cd ..```
+Task: run ```ls -la```
+Task: run ```CD kay```
+Task: run ```ls -la```
+Task: run ```is```
+Task: run ```whoami```
