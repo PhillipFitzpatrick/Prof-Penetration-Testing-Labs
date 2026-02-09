@@ -96,3 +96,17 @@ Task: run ```CD kay```
 Task: run ```ls -la```
 Task: run ```is```
 Task: run ```whoami```
+
+## Step 5 – Privilege Escalation
+Goal: We need to analyse permission boundaries and roles to understand how design issues could enable privilege changes. This could be achieved as follows.
+   1. User/group membership and role separation.
+   2. File and directory permissions.
+   3. Running services and their privileges.
+   4. Delegated permissions and allowed actions.
+
+We will enumerate SetUID binaries for privilege escalation.
+Task: run ```find / -perm -4000 2>/dev/null```
+Task: run ```vim pass.bak```
+Task: run ```SU kay```
+
+--> Result: Super User access is granted for kay on the TVM.
