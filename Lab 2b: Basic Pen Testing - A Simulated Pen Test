@@ -1,0 +1,24 @@
+# Lab 2b: Basic Pen Testing - A Simulated Pen Test
+
+Estimated Time: 180 Mins
+
+This Lab will allow you carry out a Pen Test in a ethical way, using a structured professional penetration testing methodology, in a controlled environment. You will be able to undertake a safe reconnaissance and service enumeration on a target virtual machine (TVM), while you map findings to possible vulnerabilities and how you might exploit them, using vendor documentation and CVE advisories. Essentially you are attempting to gain admin or super user access to the TVM. All Tasks should only be executed on the provided TVM and subnet.
+
+> ⚠️ :Warning: DO NOT ATTEMP TO SCAN ANY OTHER HOSTS OR NETWORKS OTHER THAT THE IP ADDRESS PROVIDED DURING THE LAB. 
+___
+
+The virtual machine used for this Lab is available for you to download and run locally on your own computer using Oracle Virtual Box. It can be downloaded from here: "Virtual Machine"
+
+💡 :Note: You will need to use a Bridged Adapter network connection between your instance of Kali Linux and the TVM for it to work locally on your machine.
+
+Settings --> Basic --> Network --> Network Adapater 1 --> Attached to & Choose Bridged Adapter from the list of dropdown options. 
+
+> ⚠️ :Warning: YOU SHOULD NOT ATTEMPT TO DO THIS WHILE CONNECTED TO EDUROAM OR ANY TU DUBLIN WIFI NETWORK. 
+
+___
+
+
+## Step 1 – Reconnaissance (Information Gathering) 
+
+Goal: To build a picture of the target landscape without intrusive actions. Focus on discovering the TVM, identifying reachable services, and form an initial hypothesis about the system. We typically achieve this using nmap. But you can also use tools like netdiscover or arp-scan. (I'll demonstrate this initial step in the lab using the nmap command. nmap -sn 192.168.1.0/24). 
+This should give us a list of all active hosts on the scanned network.
