@@ -16,3 +16,17 @@ Settings --> Basic --> Network --> Network Adapater 1 --> Attached to & Choose B
 > ⚠️ :Warning: YOU SHOULD NOT ATTEMPT TO DO THIS WHILE CONNECTED TO EDUROAM OR ANY TU DUBLIN WIFI NETWORK. 
 
 ___
+
+## Step 1 – Reconnaissance (Information Gathering) 
+
+Goal: To build a picture of the target landscape without intrusive actions. Focus on discovering the TVM, identifying reachable services, and form an initial hypothesis about the system. We typically achieve this using nmap. But you can also use tools like netdiscover or arp-scan. (I'll demonstrate this initial step in the lab using the nmap command. nmap -sn 192.168.1.0/24). 
+This should give us a list of all active hosts on the scanned network.
+
+Once we have the IP address of the TVM we can perform an initial scan on that machine using nmap.
+Task: run ```nmap -sV 192.168.1.x``` - "where x is the actual IP of the target virtual machine that you are looking to scan - I'll give this to you during the Lab". This should return several open ports on the TVM, along with running services. We could also run a more comprehensive scan - nmap -sV -A -p- 192.168.0.X -T4, where
+-sV – Service/version detection
+-A – Aggressive
+-p – Scan all TCP ports
+-T4 – Timing template: Aggressive
+
+If the nmap scan is too aggressive then it has the potential to trigger any intrusion detection systems that might be active on either the TVM or the network that you are scanning.
