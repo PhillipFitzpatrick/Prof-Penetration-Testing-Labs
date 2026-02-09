@@ -30,7 +30,8 @@ Task: run ```nmap -sV 192.168.1.x``` - "where x is the actual IP of the target v
 -p – Scan all TCP ports
 -T4 – Timing template: Aggressive
 
-c the nmap scan is too aggressive then it has the potential to trigger any intrusion detection systems that might be active on either the TVM or the network that you are scanning.
+If the nmap scan is too aggressive then it has the potential to trigger any intrusion detection systems that might be active on either the TVM or the network that you are scanning.
+
 
 ## Step 2 – Service Enumeration & Analysis
 
@@ -70,3 +71,7 @@ Task: run ```nikto -h 192.168.1.x```
 We could also use dirb http://192.168.1.x or the dirbuster tools to achieve the same result.
 Task: Try out both of these tools to validate the result obtained byfrom using nikto.
 When you ran nikto did you find any other directories and where there any file in them?
+
+b) SMB/Windows shares
+Lets see can we find any usernames for the SMB service. 
+Task: run ```enum4linux 192.168.0.x```
