@@ -31,3 +31,21 @@ Task: run ```nmap -sV 192.168.1.x``` - "where x is the actual IP of the target v
 -T4 – Timing template: Aggressive
 
 c the nmap scan is too aggressive then it has the potential to trigger any intrusion detection systems that might be active on either the TVM or the network that you are scanning.
+
+## Step 2 – Service Enumeration & Analysis
+
+Goal: To understand what each discovered service does, the versions involved, and any common configuration patterns. During this step the the focus should be on observation and documentation.
+
+Task: run ```nmap -sV -A --script vuln 192.168.1.x```
+Or we could run a more controlled vulnerability scan as follows. 
+sudo nmap -sV -T4 --script vuln --script-timeout 15s --stats-every 5s -vv 192.168.0.x
+
+It is critical at this stage that every open service is comprehensively investigated to identify any potential vulnerabilities which be exploited to compromise the TVM.
+
+There as many different tools that we can use, for each identified service, to achieve this.
+
+   1. Web servers - Web browser, Nikto, WhatWeb and DevTools
+   2. SMB/Windows shares - smbclient or enum4linux
+   3. SSH/FTP - OpenSSH or any FTP client
+   4. DNS records - nslookup or dig
+
