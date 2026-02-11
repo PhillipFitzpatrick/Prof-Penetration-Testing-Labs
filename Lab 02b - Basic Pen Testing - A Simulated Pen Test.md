@@ -70,20 +70,26 @@ Goal: Explore how week authentication or misconfigurations could potentially exp
 
 We need to now enumerate for each open service that have been identified.
 
-a) Web Servers 
+a) Web Servers
+
 Task: Using your favourite web browser open http://192.168.1.x
+
 Use nikto to get an understanding of the directory structure.
+
 Task: run ```nikto -h 192.168.1.x``` 
 We could also use dirb http://192.168.1.x or the dirbuster tools to achieve the same result.
+
 Task: Try out both of these tools to validate the result obtained byfrom using nikto.
 When you ran nikto did you find any other directories and where there any file in them?
 
 b) SMB/Windows shares
 Lets see can we find any usernames for the SMB service. 
+
 Task: run ```enum4linux 192.168.1.x```
 
 c) Brute Forcing SSH
 Lets seen can we brute force the SSH credentials with hydra.
+
 Task: run ```hydra -l Jan -P /usr/share/wordlists/rockyou.txt ssh://192.168.1.x```
 
 💡 :Note: If you have not used the rockyou.txt wordlist before, you will have to unzip it first
@@ -95,12 +101,19 @@ Task: run ```sudo gzip -d /usr/share/wordlists/rockyou.txt.gz```
 Task: ssh jan@192.168.1.x
 
 c) Now we can enumerate the file system on the TCM
+
 Task: run ```ls - la```
+
 Task: run ```cd ..```
+
 Task: run ```ls -la```
+
 Task: run ```CD kay```
+
 Task: run ```ls -la```
+
 Task: run ```is```
+
 Task: run ```whoami```
 
 
@@ -112,8 +125,11 @@ Goal: We need to analyse permission boundaries and roles to understand how desig
    4. Delegated permissions and allowed actions.
 
 We will enumerate SetUID binaries for privilege escalation.
+
 Task: run ```find / -perm -4000 2>/dev/null```
+
 Task: run ```vim pass.bak```
+
 Task: run ```SU kay```
 
 --> Result: Super User access is granted for kay on the TVM.
@@ -140,4 +156,5 @@ As a minimum you should include the following in your Lab report submission.
 ## Extra Step
 
 This is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
+
 
