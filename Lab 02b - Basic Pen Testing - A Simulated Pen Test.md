@@ -24,7 +24,10 @@ Goal: To build a picture of the target landscape without intrusive actions. Focu
 This should give us a list of all active hosts on the scanned network.
 
 Once we have the IP address of the TVM we can perform an initial scan on that machine using nmap.
-Task: run ```nmap -sV 192.168.1.x``` - "where x is the actual IP of the target virtual machine that you are looking to scan - I'll give this to you during the Lab". This should return several open ports on the TVM, along with running services. We could also run a more comprehensive scan - nmap -sV -A -p- 192.168.0.X -T4, where
+
+Task: run ```nmap -sV 192.168.1.x``` - "where x is the actual IP of the target virtual machine that you are looking to scan - I'll give this to you during the Lab". This should return several open ports on the TVM, along with running services. 
+
+We could also run a more comprehensive scan - nmap -sV -A -p- 192.168.0.X -T4, where
 -sV – Service/version detection
 -A – Aggressive
 -p – Scan all TCP ports
@@ -39,6 +42,7 @@ Goal: To understand what each discovered service does, the versions involved, an
 
 Task: run ```nmap -sV -A --script vuln 192.168.1.x```
 Or we could run a more controlled vulnerability scan as follows. 
+
 sudo nmap -sV -T4 --script vuln --script-timeout 15s --stats-every 5s -vv 192.168.0.x
 
 It is critical at this stage that every open service is comprehensively investigated to identify any potential vulnerabilities which be exploited to compromise the TVM.
@@ -134,4 +138,5 @@ As a minimum you should include the following in your Lab report submission.
 
 
 ## Extra Step
+
 This is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
