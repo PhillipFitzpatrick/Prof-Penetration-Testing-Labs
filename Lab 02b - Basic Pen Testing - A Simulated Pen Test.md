@@ -162,7 +162,8 @@ As a minimum you should include the following in your Lab report submission.
 
 ## Extra Step
 
-This is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
+There is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
+
 
 
 
