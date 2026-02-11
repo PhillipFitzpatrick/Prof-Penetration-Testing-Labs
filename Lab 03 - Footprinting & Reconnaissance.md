@@ -1,4 +1,4 @@
-# Lab 4: Footprinting & Reconnaissance
+# Lab 3: Footprinting & Reconnaissance
 
 Estimated Time: 150 Mins
 ___
