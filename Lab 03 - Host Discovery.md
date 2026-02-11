@@ -83,7 +83,7 @@ ___
 
 ### 3.5 Nmap Live Host Discovery
 
-Again on TryHackMe,search and find the 'Nmap Live Host Discovery' room and complete the full room to learn how to use Nmap to discover live hosts using ARP scan, ICMP scan, and TCP/UDP ping scan.
+Again on TryHackMe, search and find the 'Nmap Live Host Discovery' room and complete the full room to learn how to use Nmap to discover live hosts using ARP scan, ICMP scan, and TCP/UDP ping scan.
 
 
 ### 3.6 Learning to use RustScan. (Optional)
