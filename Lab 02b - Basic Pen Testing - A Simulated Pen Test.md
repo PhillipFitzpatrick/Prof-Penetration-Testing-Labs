@@ -141,12 +141,18 @@ Goal: Deliver a professional-style report for you Lab submission that conveys ho
 As a minimum you should include the following in your Lab report submission.
 
 • Cover Page
+
 • Table of Contents
+
 • University Declaration and any use of AI
+
 • Executive Summary - non-technical overview
+
 • Methodology and Scope
+
 • Findings
    - with associated context, evidence screenshots, and exploitable vunrability.
+
 • Recommendations -"You will need to do some research"
    - remediation and hardening steps.
 • Appendices 
@@ -156,5 +162,6 @@ As a minimum you should include the following in your Lab report submission.
 ## Extra Step
 
 This is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
+
 
 
