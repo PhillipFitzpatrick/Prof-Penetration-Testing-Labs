@@ -7,7 +7,7 @@ This Lab will allow you carry out a Pen Test in a ethical way, using a structure
 > ⚠️ :Warning: DO NOT ATTEMP TO SCAN ANY OTHER HOSTS OR NETWORKS OTHER THAT THE IP ADDRESS PROVIDED DURING THE LAB. 
 ___
 
-The virtual machine used for this Lab is available for you to download and run locally on your own computer using Oracle Virtual Box. It can be downloaded from here: "Virtual Machine"
+The virtual machine used for this Lab is available for you to download and run locally on your own computer using Oracle Virtual Box. It can be downloaded from here: https://tudublin-my.sharepoint.com/:u:/g/personal/phillip_fitzpatrick_tudublin_ie/IQDh4js5g1umSJuF48eS4yROAVguzcQgkcPXcBgmwY75k5A?e=TUFcqq
 
 💡 :Note: You will need to use a Bridged Adapter network connection between your instance of Kali Linux and the TVM for it to work locally on your machine.
 
@@ -140,3 +140,4 @@ As a minimum you should include the following in your Lab report submission.
 ## Extra Step
 
 This is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
+
