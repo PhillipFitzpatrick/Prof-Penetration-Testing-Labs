@@ -155,6 +155,7 @@ As a minimum you should include the following in your Lab report submission.
 
 • Recommendations -"You will need to do some research"
    - remediation and hardening steps.
+     
 • Appendices 
    - tools used and associated settings.
 
@@ -162,6 +163,7 @@ As a minimum you should include the following in your Lab report submission.
 ## Extra Step
 
 This is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
+
 
 
 
