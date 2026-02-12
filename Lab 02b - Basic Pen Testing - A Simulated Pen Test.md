@@ -27,7 +27,7 @@ Once we have the IP address of the TVM we can perform an initial scan on that ma
 
 Task: run ```nmap -sV 192.168.1.x``` - "where x is the actual IP of the target virtual machine that you are looking to scan - I'll give this to you during the Lab". This should return several open ports on the TVM, along with running services. 
 
-We could also run a more comprehensive scan - nmap -sV -A -p- 192.168.0.X -T4, where
+We could also run a more comprehensive scan - nmap -sV -A -p- 192.168.1.X -T4, where
 -sV – Service/version detection
 -A – Aggressive
 -p – Scan all TCP ports
@@ -163,6 +163,7 @@ As a minimum you should include the following in your Lab report submission.
 ## Extra Step
 
 There is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
+
 
 
 
