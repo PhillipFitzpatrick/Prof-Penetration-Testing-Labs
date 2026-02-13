@@ -1,4 +1,4 @@
-# Lab 8: Privilege Escalation
+# Lab 9: Privilege Escalation
 
 ___
 
