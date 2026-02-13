@@ -1,4 +1,4 @@
-# Lab 7: Attacking Passwords
+# Lab 8: Attacking Passwords
 
 ___
 
