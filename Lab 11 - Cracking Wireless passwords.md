@@ -1,4 +1,4 @@
-# Lab 10: Cracking Wireless Passwords
+# Lab 11: Cracking Wireless Passwords
 
 ___
 
