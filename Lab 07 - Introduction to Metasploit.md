@@ -1,4 +1,4 @@
-# Lab 6: Introduction to Metasploit
+# Lab 7: Introduction to Metasploit
 
 Estimated Time: 130 Mins
 ___
