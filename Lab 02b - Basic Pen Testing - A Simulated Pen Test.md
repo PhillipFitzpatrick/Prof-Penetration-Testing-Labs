@@ -90,7 +90,7 @@ Task: run ```enum4linux 192.168.1.x```
 c) Brute Forcing SSH
 Lets seen can we brute force the SSH credentials with hydra.
 
-Task: run ```hydra -l Jan -P /usr/share/wordlists/rockyou.txt ssh://192.168.1.x```
+Task: run ```hydra -l jan -P /usr/share/wordlists/rockyou.txt ssh://192.168.1.x```
 
 💡 :Note: If you have not used the rockyou.txt wordlist before, you will have to unzip it first
 
@@ -163,6 +163,7 @@ As a minimum you should include the following in your Lab report submission.
 ## Extra Step
 
 There is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
+
 
 
 
