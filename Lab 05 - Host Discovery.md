@@ -1,6 +1,6 @@
 # Lab 5: Host Discovery
 
-Estimated Time: 120 Mins
+Estimated Time: 100 Mins
 ___
 
 
