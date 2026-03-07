@@ -100,7 +100,7 @@ Task: run ```sudo gzip -d /usr/share/wordlists/rockyou.txt.gz```
 
 Task: ssh jan@192.168.1.x
 
-c) Now we can enumerate the file system on the TCM
+c) Now we can enumerate the file system on the TVM
 
 Task: run ```ls - la```
 
@@ -163,6 +163,7 @@ As a minimum you should include the following in your Lab report submission.
 ## Extra Step
 
 There is one extra step that you might want to try complete. This TVM is actually a capture the flag VM. Can you find the flag and read it?
+
 
 
 
