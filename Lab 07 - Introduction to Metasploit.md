@@ -13,7 +13,7 @@ ___
 In this lab we will:
 1. Metasploit introduction
 2. Metasploit demo against metasploitable 1
-_3. Metasploit demo against windows_ 
+3. Metaploit demo against Windows XP
 4. Using metasploit to exploit the Eternal Blue Windows vulnerability.
 
 ___
@@ -35,11 +35,12 @@ Once we've completed the introductory material, check out the walkthrough of exp
 ___
 
 
-_### 6.3 Metasploit demo against windows_ 
+### 7.3 Metasploit demo against metasploitable 1
 
-Old end of life products tend to always be vulnerable and obviously shouldn't appear on a live network because of the risks associated with such systems. Your instructor will show a walkthrough of exploiting a legacy windows XP system. If you'd like to attempt the same demo you can find the a Windows XP image and key, on the module resources section on Brightspace. 
+Old end of life products tend to always be vulnerable and obviously shouldn't appear on a live network because of the risks associated with such systems. Use the instructions below to do a a walkthrough of exploiting a legacy Windows XP system. (**Where you see a reference to Windows 7 assume Windows XP**). You can find the a Windows XP image (ISO) and key, on the module Resources section on BrightSpace. You will need to setup the ISO on Oracle Virtual Box.
 
 - Use metasploit to get access to Windows XP
+- https://www.geeksforgeeks.org/ethical-hacking/exploiting-ms17-010-using-metasploit-framework/ 
 ___
 
 
