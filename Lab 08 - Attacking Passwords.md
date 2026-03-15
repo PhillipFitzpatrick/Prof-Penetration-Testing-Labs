@@ -17,11 +17,11 @@ In this lab we will:
 ___
 
 
-### 7.1 Using Crunch to generate custom wordlists
+### 8.1 Using Crunch to generate custom wordlists
 
 Many times in penetration testing engagements you will discover authentication forms that you will need to bypass in order to gain access to an application or to a remote system. Having a good wordlists always helps, but as a penetration tester you must be able to create your own custom wordlists depending on the situation. There are a variety of tools that can assist with this, but here we'll focus on Crunch.
 
-#### 7.1.1 Create a Sample Wordlist
+#### 8.1.1 Create a Sample Wordlist
 
 We can create a simple wordlist by executing the following command  
 ```crunch 5 5 admin -o pentestlab.txt``` 
@@ -32,14 +32,14 @@ This will instruct crunch to create a wordlist that will have minimum length of 
 The same method applies and if we want to create a wordlist mixed with letters and numbers.  
 ```crunch 5 5 pentestlab123 -o numbersletters.txt```
 
-#### 7.1.2 Special Characters
+#### 8.1.2 Special Characters
 
 For special characters like !$% you will need to execute something like the following:  
 ```crunch 5 5 pentestlab\%\@\!```
 
 This is because some special characters need escaping and the \ is used before the character. 
 
-#### 7.1.3 String Permutations
+#### 8.1.3 String Permutations
 Here there are two options.First options is when we will want to generate something based on the characters of a word. For example ```crunch 1 1 -p abc```  will produce the following list:  
 ![Picture1.png](images/Picture1.png)  
  
@@ -47,21 +47,21 @@ The second option is when we will want to create a list based on different words
 ```crunch 1 1 -p pen test lab```  
 ![Picture2.png](images/Picture2.png)  
  
-#### 7.1.4 Splitting Wordlists
+#### 8.1.4 Splitting Wordlists
 
 If we use the -b option we will instruct crunch to create a wordlist which will be divided into multiple files. Another option that we can combine with that command is to choose the size of our wordlist.For example:  
 ```crunch 6 6 0123456789 -b 1mb -o START```
 
 This will generate wordlists which will be 1Mb each and with 6 characters size and it will include the characters 0123456789.
 
-#### 7.1.5 Specify the number of words
+#### 8.1.5 Specify the number of words
 
 Crunch allows us to specify the number of words in each wordlist.This will create a wordlists that it will contain 20 words maximum by taken a specific charset of lalpha which is [abcdefghijklmnopqrstuvwxyz].  
 ```crunch 3 3 -f /usr/share/crunch/charset.lst lalpha -o START -c 20```
 
 Alternatively you can use any other charset from the list that comes with crunch if you don’t want to use a custom charset.
 
-#### 7.1.6 Prefix Wordlists
+#### 8.1.6 Prefix Wordlists
 
 Now lets say that we want to create a wordlist that will contains the word pentestlab followed by 3 random characters.The command for that will be:  
 ```crunch 13 13 -f /usr/share/crunch/charset.lst lalpha -t pentestlab@@@```
@@ -71,14 +71,14 @@ which will produce the following output:
 Alternatively if we want the word admin to be in the middle we can modify the command like this:  
 ```crunch 9 9 -f /usr/share/crunch/charset.lst -t @@admin@@```
 
-#### 7.1.7 Conclusion
+#### 8.1.7 Conclusion
 
 Creating wordlists can facilitate your needs when performing a penetration test.Crunch of course offers a variety of options and combinations that a user can play with, look at the help pages for examples of how to create complex custom lists.Trying to brute force of course an application or a system with a wordlist can of course lock you out depending on the account lockout policy but it always helps if you can have your own custom wordlists that may be help you to obtain access.
 
 ___
 
 
-### 7.2 Learning to use Hydra
+### 8.2 Learning to use Hydra
 
 While John and hashcat are great at break password hashes if you’ve managed to somehow grab some, but often we just want to try brute force some webpage login or SSH or email server or whatever. For these scenarios, our go to tool is Hydra.
 
@@ -96,9 +96,9 @@ Follow the Hydra introduction room on THM and watch the video walkthrough to lea
 ___
 
 
-### 7.3 Cracking windows and linux password hashes
+### 8.3 Cracking windows and linux password hashes
 
-#### 7.3.1 Cracking Linux Password Hashes using John the Ripper
+#### 8.3.1 Cracking Linux Password Hashes using John the Ripper
 One of the first post exploitation activities when we have compromised a target is to obtain the passwords hashes in order to crack them offline. If we managed to crack the hashes then we might be able to escalate our privileges and to gain administrative access especially if we have cracked the administrator’s hash. In this tutorial we will see how to obtain and crack password hashes from a Unix box.
 
 Lets say that we have exploited a vulnerability and we have gained a remote shell to our target.The next step is to see the directories and files that exist on the remote system.
@@ -132,7 +132,7 @@ In /etc/shadow the ':' (colon) is used separate fields, The shadow file presents
 - Number of days remaining for the user to change their password (else their account is disabled).  
 - A reserved field.
   
-#### 7.3.2 Digital forensics & Cyber Security
+#### 8.3.2 Digital forensics & Cyber Security
 
 So we will save the hashes as well in a file called shadow.txt and we will use the famous password cracker john the ripper in order to crack those hashes.
 
@@ -163,19 +163,19 @@ Now that we have all the passwords we can use them in order to connect remotely 
 more complex or hybrid passwords, you probably want to use a password list containing far more passwords, including hybrid passwords such "p@$$w0rd" that combine special
 characters into words. John has a pretty good password list itself.
 
-### 7.4 Cracking windows LM Hashes and SAM file
+### 8.4 Cracking windows LM Hashes and SAM file
 
 We just demonstrated how to use John to crack some Linux passwords. Now see if you can figure out how to crack some windows passwords. You whatever tools you wish to try figure out the next two challenges.
 
 In the lab resources for this lab you should find an example of a windows LM password hash, you need to try figure out yourself how to crack this LM password hash, you should complete this before moving onto the next challenge. In the previous example we had done the work for you, and extracted the details from a SAM file, this time you’ll need to complete the entire process yourself. You might need to do some researching to figure this one out. Can you use the Windows Sam and System files together to get the user account and password?
 
-### 7.5 Introduction to Hashcat
+### 8.5 Introduction to Hashcat
 
 You should be somewhat familiar with hashcat from our secure communications module last semester, Hashcat is a similar tool to John, and can be used to brute force almost type of password hash. It is however a lot less user friendly than John, so can take a while to get used too, but it is perhaps the fasted hash cracking tool around, once you master it, so it is well worth taking the time and learning how to use it.
 
 See if you can complete the password cracking sections from the previous john section, and try break the same shadow files as earlier this time however using Hashcat rather than John.
 
-### 7.6 THM hash cracking rooms
+### 8.6 THM hash cracking rooms
 
 As well as brute forcing using John or Hashcat we can also take advanced on online hash cracking websites and services, there are plenty to choose from, just google to find a few to try. 
 
