@@ -3,7 +3,7 @@
 Estimated Time: 120 Mins
 ___
 
-Metasploit is the most widely used exploitation framework. Metasploit is a powerful tool that can support all phases of a penetration testing engagement, from information gathering to post-exploitation. In this lab we'll do a quick introduction to the tool, and look at some demonstrations of how to use it.
+Metasploit is the most widely used exploitation framework. Metasploit is a powerful tool that can support all phases of a penetration testing engagement, from information gathering to post-exploitation. In this lab we'll do a quick introduction to the tool using THM, and look at some practical walkthoughs of how to use it.
 
 ___
 
