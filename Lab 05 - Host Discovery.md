@@ -25,7 +25,7 @@ ___
 ___
 
 
-### 3.1 Understanding the PING command. 
+### 5.1 Understanding the PING command. 
 
 One of the easiest methods of performing host discovery by simply performing a ping sweep of all the IP addresses in a particular range. If a host replies, then we would know it was active. In this first lab section we’ll look at the basic ping command, which we’re likely all familiar with, but this time we’ll take a detailed look at the command and what it can do.  
 
@@ -46,7 +46,7 @@ On your attack machine open a terminal and perform each of the following.
 ___
 
 
-### 3.2 Understanding the Fping command. 
+### 5.2 Understanding the Fping command. 
 
 This time we'll be using the fping tool on Kali. 
 
@@ -60,7 +60,7 @@ This time we'll be using the fping tool on Kali.
 ___
  
 
-### 3.3 When to use ARP scan.  
+### 5.3 When to use ARP scan.  
 
 The Address resolution protocol (ARP) works on a local network to help map IPs and MAC addresses. The basic protocol involves any host broadcasting the ‘Who has IP 1.2.3.4’ message to all connected devices, if any device has that IP they usually respond, and the host records the MAC address of the host that responded. 
 
@@ -74,19 +74,19 @@ Have a look at the man pages for both the arping and netdiscover tools and try t
 ___
 
 
-### 3.4 Learning to use Nmap.  
+### 5.4 Learning to use Nmap.  
 
 One of the go to tools in the world of security is the versatile Nmap scanning tool. Learning how to use it well is crucial as it is a tool you’ll use over and over again with every pentest. 
 
 Sign up for the Nmap room on THM and complete the introduction and exercises listed in the room. 
 ___
 
-### 3.5 Nmap Live Host Discovery
+### 5.5 Nmap Live Host Discovery
 
 Again on TryHackMe, search and find the 'Nmap Live Host Discovery' room and complete the full room to learn how to use Nmap to discover live hosts using ARP scan, ICMP scan, and TCP/UDP ping scan.
 
 
-### 3.6 Learning to use RustScan. (Optional)
+### 5.6 Learning to use RustScan. (Optional)
 
 A very new modern scanning tool is RustScan. It is extremely fast and is designed to be used with Nmap (not as an Nmap replacement) to massively speed up full network scans.  
 
