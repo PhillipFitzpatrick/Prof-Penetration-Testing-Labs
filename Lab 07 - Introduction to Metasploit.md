@@ -13,7 +13,7 @@ ___
 In this lab we will:
 1. Metasploit introduction
 2. Metasploit demo against metasploitable 1
-3. Metaploit demo against Windows XP
+3. Metapsloit demo against Windows XP
 4. Using metasploit to exploit the Eternal Blue Windows vulnerability.
 
 ___
