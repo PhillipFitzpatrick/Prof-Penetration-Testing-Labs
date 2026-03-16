@@ -11,7 +11,7 @@ The virtual machine used for this Lab is available for you to download and run l
 
 💡 :Note: You will need to use a Bridged Adapter network connection between your instance of Kali Linux and the TVM for it to work locally on your machine.
 
-Settings --> Basic --> Network --> Network Adapater 1 --> Attached to & Choose Bridged Adapter from the list of dropdown options. 
+Settings --> Basic --> Network --> Network Adapater 1 --> Attached to & Choose Internal Host from the list of dropdown options. 
 
 > ⚠️ :Warning: YOU SHOULD NOT ATTEMPT TO DO THIS WHILE CONNECTED TO EDUROAM OR ANY TU DUBLIN WIFI NETWORK. 
 
