@@ -19,7 +19,7 @@ In this lab we will:
 ___
 
 
-### 10.1 Connecting your wireless adapter to your kali vm
+### 9.1 Connecting your wireless adapter to your kali vm
 
 One of the issues you might have, is whether or not your wireless card is supported, if is not there isn’t much you can do, but assuming your card is supported lets look at how we can connect it to our kali VM's through Virtualbox. 
 
@@ -36,7 +36,7 @@ One of the issues you might have, is whether or not your wireless card is suppor
 
 ___
 
-### 10.2 Putting your wireless card in monitor mode
+### 9.2 Putting your wireless card in monitor mode
 
 Next you will need to put the card into monitor mode on the desired channel, using airmon-ng. airmon-ng is a handy utility for checking interface availability and setting
 cards to monitor mode on specific channels. It is included as part of the aircrack-ng suite. 
@@ -65,7 +65,7 @@ by default our card will jump across all channels, if we know the channel we are
 
 ___
 
-### 10.3 Scanning and capturing local wireless traffic
+### 9.3 Scanning and capturing local wireless traffic
 
 We now want to view all the wireless networks and find the network we want to attack. This is normally visible to us, and we can use a program such as airodump-ng to view the details.
 airodump-ng is an 802.11 packet capture program that is designed to "capture as much encrypted traffic as possible
@@ -120,7 +120,7 @@ At this stage we are capturing traffic from our targeted network. Depending on t
 
 ___
 
-### 10.4 Cracking WEP Networks
+### 9.4 Cracking WEP Networks
 
 For wep networks we need data... the more the better...
 
@@ -156,7 +156,7 @@ Aircrack-ng will likely say it couldn't find the key and will try again once mor
 
 ___
 
-### 10.5 Cracking WPA/WPA2 Networks
+### 9.5 Cracking WPA/WPA2 Networks
 
 Cracking WPA/WPA2 requires us to capture a handshake and doesn't usually care about the number of IV's or packets. Once we've captured a handshake we can try crack the password. The coomand is simialr to WEP except this time we must give a wordlist.
 
