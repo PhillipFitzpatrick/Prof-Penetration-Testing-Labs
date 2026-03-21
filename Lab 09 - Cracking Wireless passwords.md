@@ -1,4 +1,4 @@
-# Lab 08a: Cracking Wireless Passwords
+# Lab 09: Cracking Wireless Passwords
 
 ___
 
