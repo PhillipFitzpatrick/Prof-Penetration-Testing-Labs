@@ -1,4 +1,4 @@
-# Lab 9: Privilege Escalation
+# Lab 10: Privilege Escalation
 
 ___
 
@@ -11,18 +11,14 @@ In this lab we will focus on just two THM rooms, Make sure you understand each o
 In this lab we will:
 1. Linux PrivEsc Arena
 2. Linux Privilege Escalation
-
 ___
 
-
-### 8.1 Linux PrivEsc Arena
+### 10.1 Linux PrivEsc Arena
 
 Students will learn how to escalate privileges using a very vulnerable Linux VM. SSH is open. Your credentials are TCM:Hacker123
 - Complete the THM room : Linux PrivEsc Arena  
   
-#### 8.2 Linux Privilege Escalation
+#### 10.2 Linux Privilege Escalation
 
 Learn the fundamentals of Linux privilege escalation. From enumeration to exploitation, get hands-on with over 8 different privilege escalation techniques.
 - Complete the THM room : Linux Privilege Escalation
-
-  
