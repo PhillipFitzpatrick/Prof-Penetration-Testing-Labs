@@ -35,7 +35,7 @@ Once we've completed the introductory material, check out the walkthrough of exp
 ___
 
 
-### 7.3 Metasploit demo against metasploitable 1
+### 7.3 Metasploit demo against Windows XP
 
 Old end of life products tend to always be vulnerable and obviously shouldn't appear on a live network because of the risks associated with such systems. Use the instructions below to do a a walkthrough of exploiting a legacy Windows XP system. (**Where you see a reference to Windows 7 assume Windows XP**). You can find the a Windows XP image (ISO) and key, on the module Resources section on BrightSpace. You will need to setup the ISO on Oracle Virtual Box.
 
