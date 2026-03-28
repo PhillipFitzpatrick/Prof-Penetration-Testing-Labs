@@ -141,7 +141,7 @@ Now to produce encrypted packets by collecting and replaying ARP packets:
 
 We now start listening for ARP requests with the -3 option. The -h option is mandatory and has to be the MAC address of an associated client.
 
-> ⚠️ For the practical exam DE-Authenticating and packet injection are strictly not permitted. You'll loose all wireless marks!!!
+> ⚠️ **For the practical exam DE-Authenticating and packet injection are strictly not permitted. You'll loose all wireless marks!!!**
 
 With our airodump-ng capturing packs in the background we can now attempt to break the WEP key for our target network. Todo this we use the follwing commands.
 
