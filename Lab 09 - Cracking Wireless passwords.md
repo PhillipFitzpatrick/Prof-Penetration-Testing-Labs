@@ -32,7 +32,13 @@ One of the issues you might have, is whether or not your wireless card is suppor
 7. Start your kali VM, your device should be added. To check open a terminal and type ifconfig and you should see a wlan0 interface.
 
 > if you don't see the wlan0 interface, your wireless adapter likely needs drivers to be installed. Check your device webpage and look for drivers...
-> Driver setup for small alfa adapter:Alfa Network Alfa USB Adapter AWUS036ACS https://www.youtube.com/watch?v=qQZrM_AoJrY&t=67s
+> **Before you install any drivers please make sure you have done a snapshot, followed by a full system update of Kali, followed by another snapshot.**
+> There are several way to install the required drivers. 
+>  - For tp-link AC1300 Archer T3U Plus the adpapter is based on the RTL88x2BU chipset developed by Realtek. This short video will show you the 6 commands that you need to run to install the necessary drivers for this adpater - https://youtu.be/UqqmvXSm0vk
+> - For tp-link .....
+> - For Alfa Network Alfa AWUS036ACS the adapter is based on the RTL8811AU chipset developed by Realteck. This short video will show how to install the necessary drivers for this adapter - https://youtu.be/qQZrM_AoJrY
+>
+> 
 
 ___
 
